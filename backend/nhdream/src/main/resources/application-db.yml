@@ -1,0 +1,20 @@
+---
+spring:
+  config:
+    activate:
+      on-profile: db-local
+  datasource:
+    driver-class-name: ${local.db.driver}
+    url: ${local.db.url}
+    username: ${local.db.username}
+    password: ${local.db.password}
+---
+spring:
+  config:
+    activate:
+      on-profile: db-server
+  datasource:
+    driver-class-name: ${server.db.driver}
+    url: ${server.db.url}
+    username: ${server.db.username}
+    password: ${server.db.password}
