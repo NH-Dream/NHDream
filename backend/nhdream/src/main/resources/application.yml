@@ -1,6 +1,3 @@
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/farmyo?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
-    username: root
-    password: 1234
+version https://git-lfs.github.com/spec/v1
+oid sha256:d70ed57c00f1d99c85f4bf619490c441f3a2c2743089dacc1fb5598a324f2190
+size 586
