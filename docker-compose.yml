@@ -1,0 +1,16 @@
+services:
+  nhbackend:
+    container_name: nh_backend
+    build:
+      context: ./backend/nhdream
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      # JASYPT_KEY: changebysed
+    networks:
+      - nh_network
+
+networks:
+  nh_network:
+    driver: bridge
