@@ -6,7 +6,7 @@ COPY frontend/nh-dream/package*.json .
 
 RUN npm install
 
-COPY . .
+COPY frontend/nh-dream .
 
 RUN npm run build
 
@@ -21,7 +21,7 @@ COPY admin/frontend/package*.json .
 
 RUN npm install
 
-COPY . .
+COPY admin/frontend .
 
 RUN npm run build
 
