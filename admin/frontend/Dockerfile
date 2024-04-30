@@ -12,6 +12,6 @@ RUN npm run build
 
 FROM nginx:stable-alpine as production-stage
 
-COPY --from=build-stage ./homepage/build /usr/share/nginx/html/
+COPY --from=build-stage ./homepage/dist /usr/share/nginx/html/
 
 CMD ["nginx", "-g", "daemon off;"]
