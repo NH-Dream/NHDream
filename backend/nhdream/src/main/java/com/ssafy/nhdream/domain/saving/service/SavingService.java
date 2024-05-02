@@ -1,6 +1,6 @@
-package com.ssafy.nhdream.saving.service;
+package com.ssafy.nhdream.domain.saving.service;
 
-import com.ssafy.nhdream.saving.dto.SavingProductListDto;
+import com.ssafy.nhdream.domain.saving.dto.SavingProductListDto;
 
 import java.util.List;
 
