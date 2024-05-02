@@ -7,7 +7,12 @@
 
 .smallText {
   font-size: small;
-  text-align: right;
+  text-align: left;
+}
+
+.largeText {
+  font-size: x-large;
+  font-weight: 600;
 }
 
 .inputs {
