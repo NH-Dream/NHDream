@@ -1,8 +1,7 @@
-package com.ssafy.nhdream.saving.dto;
+package com.ssafy.nhdream.domain.saving.dto;
 
 import lombok.Builder;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 
 @Getter
 @Builder
