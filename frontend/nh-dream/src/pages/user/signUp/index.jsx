@@ -1,0 +1,6 @@
+export { default as SignUpPage1 } from "./signUp1"
+export { default as SignUpPage2 } from "./signUp2"
+export { default as SignUpPage3 } from "./signUp3"
+export { default as SignUpPage4 } from "./signUp4"
+export { default as SignUpPage5Farmer } from "./signUp5Farmer"
+export { default as SignUpPage5Student } from "./signUp5Student"
