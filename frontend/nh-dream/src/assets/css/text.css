@@ -1,0 +1,24 @@
+.clickText {
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  color: grey;
+  text-align: right;
+}
+
+.smallText {
+  font-size: small;
+  text-align: left;
+}
+
+.largeText {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.inputs {
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 5px;
+  margin: 5px 0px;
+  /* 위아래, 좌우 */
+}
