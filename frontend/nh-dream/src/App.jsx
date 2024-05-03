@@ -1,20 +1,3 @@
-import Router from "./router"
-import BottomBar from "./components/common/BottomBar"
-import "./assets/css/app.css"
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
-
-
-function App() {
-  return (
-    <div className="app-container">
-      <div className="content">
-        <Router />
-      </div>
-      <div className="bottom-bar">
-        <BottomBar />
-      </div>
-  </div>
-  )
-}
-export default App
+version https://git-lfs.github.com/spec/v1
+oid sha256:e83beb255ab7b167a9f24960eafc780fcc630a32b04b9be89d03ad426974224f
+size 655
