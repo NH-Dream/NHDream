@@ -10,6 +10,11 @@
   text-align: left;
 }
 
+.middleText {
+  font-size: large;
+  font-weight: 600;
+}
+
 .largeText {
   font-size: x-large;
   font-weight: 600;
