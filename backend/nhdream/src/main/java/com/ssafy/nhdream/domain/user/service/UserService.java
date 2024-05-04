@@ -1,11 +1,3 @@
-package com.ssafy.nhdream.domain.user.service;
-
-import com.ssafy.nhdream.domain.user.dto.JoinReqDto;
-
-public interface UserService {
-    // 회원가입
-    public int join(JoinReqDto joinReqDto);
-
-    // 아이디 중복 검사
-    void checkIdDuplicate(String id);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fb2df39363d715b017ffb2bf91b1a7db6f23ec32f3b51e7ed6797af75750c6a0
+size 689
