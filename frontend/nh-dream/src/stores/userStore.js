@@ -1,11 +1,3 @@
-import { create } from 'zustand'
-// import { useState, useEffect } from 'react';
-
-const useStore = create((set) => ({
-  bears: 0,
-  increasePopulation: () => set((state) => ({ bears: state.bears + 1 })),
-  removeAllBears: () => set({ bears: 0 }),
-  updateBears: (newBears) => set({ bears: newBears }),
-}))
-
-export default useStore
+version https://git-lfs.github.com/spec/v1
+oid sha256:360f812fedb23b4c7fa7aad92cbd50307c32761118f1951f98721a1dfae6faa7
+size 1520
