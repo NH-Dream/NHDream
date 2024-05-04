@@ -1,0 +1,5 @@
+export { default as ChangeMyPasswordPage } from "./info/changeMyPassword"
+export { default as ChangeWalletPasswordPage } from "./info/changeWalletPassword"
+export { default as LoanDetailPage } from "./finance/loan"
+export { default as MyInfoPage } from "./info/myProfile"
+export { default as BeFarmerPage } from "./info/beFarmer"

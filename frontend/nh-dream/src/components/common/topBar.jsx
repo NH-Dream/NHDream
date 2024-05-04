@@ -1,7 +1,7 @@
 import Back from '../../assets/images/topbar/back.png'
 import { useNavigate } from 'react-router-dom'
 
-export default function TopBar({ title,color }){
+export default function TopBar({ title, color }){
   const navigate = useNavigate()
 
   const handleBack = ()=>{

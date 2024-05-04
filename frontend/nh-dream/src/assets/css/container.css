@@ -16,3 +16,15 @@
   align-items: center;
   flex-direction: column;
 }
+
+.loanColor {
+  background-color: #BCD6D5;
+}
+
+.savingColor {
+  background-color: #C8F0C5;
+}
+
+.depositColor {
+  background-color: #FBFBB7;
+}
