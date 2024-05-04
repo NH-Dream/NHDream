@@ -7,7 +7,10 @@ import java.util.Optional;
 
 public interface UserRepository extends JpaRepository<User, Integer> {
 
-    // 로그인 아이디로 회원 조회
+    // 아이디로 회원 조회
     Optional<User> findByLoginId(String loginId);
+
+    // 이메일로 회원 조회
+    Optional<User> findByEmail(String email);
 
 }
