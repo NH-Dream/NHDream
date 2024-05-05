@@ -5,8 +5,8 @@ export default function LoanDetailComponent() {
 
   return (
     <div className="loanColor pt-3">
-    <LoanCard />
-    <LoanDetail />
+      <LoanCard />
+      <LoanDetail />
     </div>
   )
 }
