@@ -1,16 +1,3 @@
-package com.ssafy.nhdream.domain.loan.repository;
-
-import com.ssafy.nhdream.entity.loan.LoanOptions;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.stereotype.Repository;
-
-import java.util.List;
-
-@Repository
-public interface LoanRepository extends JpaRepository<LoanOptions, Integer> {
-
-    @Query("SELECT l FROM LoanOptions l")
-    List<LoanOptions> findAllByLoanOptions();
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:537f58252ca93d611b6815b1f1ea58ce539e25e214159b469a36074d9233d8a5
+size 524
