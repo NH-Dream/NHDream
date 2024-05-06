@@ -7,5 +7,9 @@ public interface LoanService {
 
     LoanListReqDto getLoanList();
     LoanReqDto getLoanAccountDetail(int id);
+    void createLoanOption();
+    void createLoanAccount();
+    void createLoanApproval();
+
 
 }
