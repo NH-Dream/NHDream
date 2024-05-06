@@ -15,8 +15,8 @@ public class LoanReqDto {
     private BigDecimal outstanding;
     private LocalDate createdAt;
     private LocalDate expirationAt;
-    // 납입회차 추가
-    // 결제 방법 추가
-    // 결제일 추가
+    private int round;
+    private int paymentMethod;
+    private int paymentDate;
 
 }
