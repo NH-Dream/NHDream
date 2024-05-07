@@ -8,7 +8,7 @@ import java.util.List;
 
 @Getter
 @Builder
-public class LoanListReqDto {
+public class LoanListResDto {
 
     List<LoanListDto> loanListDtos;
 
