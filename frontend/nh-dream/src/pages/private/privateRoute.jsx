@@ -6,10 +6,10 @@ const PrivateRoute = () => {
   const { isLoggedIn } = userStore();
   const { failModal } = modalStore();
 
-  if (!isLoggedIn) {
-    failModal("로그인이 필요합니다.");
-    return <Navigate to="/login" />;
-  }
+  // if (!isLoggedIn) {
+  //   failModal("로그인이 필요합니다.");
+  //   return <Navigate to="/login" />;
+  // }
 
   return <Outlet />;
 };
