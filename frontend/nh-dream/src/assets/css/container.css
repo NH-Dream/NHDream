@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.child {
+
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loanColor {
+  background-color: #BCD6D5;
+}
+
+.savingColor {
+  background-color: #C8F0C5;
+}
+
+.depositColor {
+  background-color: #FBFBB7;
+}
+
+.mainColor {
+  background-color: #2EB1AD;
+}
+
+.cardColor {
+  background-color: #1E7572;
+}
