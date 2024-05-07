@@ -10,14 +10,13 @@ import java.time.LocalDate;
 @Builder
 public class LoanResDto {
 
-    private int loanProductId;
-    private BigDecimal amount;
-    private LocalDate startedAt;
+    private BigDecimal principal;
+    private BigDecimal interest;
+    private BigDecimal outstanding;
+    private LocalDate createdAt;
     private LocalDate expirationAt;
-    private int term;
-    private int userType;
+    private int round;
     private int paymentMethod;
     private int paymentDate;
-    private BigDecimal rate;
 
 }
