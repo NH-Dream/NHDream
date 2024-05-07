@@ -27,3 +27,7 @@
   margin: 5px 0px;
   /* 위아래, 좌우 */
 }
+
+.whiteColor {
+  color: white;
+}
