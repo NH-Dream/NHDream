@@ -1,0 +1,24 @@
+.size {
+  width: 80px;
+  height: 100px;
+}
+
+.detail-size{
+  width: 250px;
+  height: 280px;
+}
+
+.order-detail{
+  border-radius: 5px;
+  border: 2px solid #67D49D;
+}
+
+.title1{
+  color:gray;
+  font-size:1.15rem
+}
+
+.content1{
+  font-size:1.15rem;
+  font-weight: 700;
+}
