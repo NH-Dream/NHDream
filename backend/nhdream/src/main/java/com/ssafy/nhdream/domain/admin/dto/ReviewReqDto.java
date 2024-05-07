@@ -13,7 +13,7 @@ public class ReviewReqDto {
     private int userId;
 
     @Schema(description = "신청 게시물 PK")
-    private int eduApplyId;
+    private int applyPostId;
 
     @Schema(description = "심사 결과")
     private int result;
