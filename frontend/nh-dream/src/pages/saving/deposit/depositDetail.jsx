@@ -1,5 +1,5 @@
-import TopBar from "../../components/common/topBar"
-import DepositJoinDetailComponent from "../../components/saving/depositJoinDetailComponent"
+import TopBar from "../../../components/common/topBar"
+import { DepositJoinDetailComponent } from "../../../components/saving/index"
 
 export default function DepositJoinDetailPage() {
   return (
