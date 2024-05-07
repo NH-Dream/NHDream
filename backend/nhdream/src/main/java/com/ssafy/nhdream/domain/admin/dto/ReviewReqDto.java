@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Schema(description = "교육 인증 승인 요청 DTO")
-public class TrainingReviewReqDto {
+public class ReviewReqDto {
 
     @Schema(description = "신청자 PK")
     private int userId;
