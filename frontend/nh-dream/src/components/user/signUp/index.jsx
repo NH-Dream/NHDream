@@ -1,0 +1,6 @@
+export { default as SignUpComponent1 } from './signUpComponent1'
+export { default as SignUpComponent2 } from './signUpComponent2'
+export { default as SignUpComponent3 } from './signUpComponent3'
+export { default as SignUpComponent4 } from './signUpComponent4'
+export { default as SignUpComponent5Farmer } from './signUpComponent5Farmer'
+export { default as SignUpComponent5Student } from './signUpComponent5Student'
