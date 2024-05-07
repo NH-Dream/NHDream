@@ -1,17 +1,3 @@
-package com.ssafy.nhdream.domain.loan.service;
-
-import com.ssafy.nhdream.domain.loan.dto.*;
-
-public interface LoanService {
-
-    LoanListResDto getLoanList();
-    LoanResDto getLoanAccountDetail(int id);
-    int createLoanOption(LoanOptionReqDto loanOptionReqDto);
-    int createLoanApproval(LoanApprovalReqDto loanApprovalReqDto);
-    void createLoanAccount();
-    int createLoanProduct(LoanProductReqDto loanProductReqDto);
-    int updateLoanProduct(LoanProductReqDto loanProductReqDto);
-
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:815e7f2090ae054a7616e4294c21ee822a215a392ae1b2c523563540fc788282
+size 531
