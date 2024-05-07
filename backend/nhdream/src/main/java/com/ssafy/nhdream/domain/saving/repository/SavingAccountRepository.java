@@ -1,7 +1,3 @@
-package com.ssafy.nhdream.domain.saving.repository;
-
-import com.ssafy.nhdream.entity.saving.SavingAccount;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface SavingAccountRepository extends JpaRepository<SavingAccount, Integer> {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0a0598a68ac4f37ec1765921093a0fcc20ec42a6c32e8a05b8f0966c7e649af9
+size 863
