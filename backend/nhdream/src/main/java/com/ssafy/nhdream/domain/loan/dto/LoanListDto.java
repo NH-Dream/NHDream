@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 public class LoanListDto {
 
     @NotBlank
-    private String title;
+    private String name;
     @NotBlank
     private BigDecimal minRate;
     @NotBlank
