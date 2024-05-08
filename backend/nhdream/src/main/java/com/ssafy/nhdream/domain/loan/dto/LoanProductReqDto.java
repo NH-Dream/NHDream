@@ -13,6 +13,7 @@ public class LoanProductReqDto {
     private String name;
     private BigDecimal amountRange;
     private BigDecimal minRate;
-    private BigDecimal maxRate;
+    private BigDecimal preferredRate1;
+    private BigDecimal preferredRate2;
 
 }
