@@ -1,16 +1,3 @@
-import SavingJoinCard from "../element/savingJoinCard"
-import SavingJoinData from "../element/savingJoinData"
-import "../../../assets/css/container.css"
-import "../../../assets/css/text.css"
-import "../../../assets/css/button.css"
-import "../../../assets/css/img.css"
-import "../../../assets/css/size.css"
-
-export default function SavingJoinDetailComponent() {
-  return (
-    <div className="mx-3">
-      <SavingJoinCard/>
-      <SavingJoinData/>
-    </div>
-  )
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c08d123aad1c962213084ae7de087728d6fae22965c4514d5ca156adebc65a96
+size 553
