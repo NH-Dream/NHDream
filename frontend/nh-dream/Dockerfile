@@ -21,7 +21,7 @@ COPY admin/nhdream/package*.json .
 
 RUN npm install
 
-COPY admin/frontend .
+COPY admin/nhdream .
 
 RUN npm run build
 
