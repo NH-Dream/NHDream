@@ -1,5 +1,5 @@
-import { DepositJoinOkComponent } from "../../../components/saving"
 import TopBar from "../../../components/common/topBar"
+import { DepositJoinOkComponent } from "../../../components/saving"
 
 export default function DepositJoinOkPage() {
   return (
