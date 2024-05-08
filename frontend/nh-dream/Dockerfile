@@ -17,7 +17,7 @@ FROM node:lts-alpine as build-stage-admin
 
 WORKDIR /homepage/admin
 
-COPY admin/frontend/package*.json .
+COPY admin/nhdream/package*.json .
 
 RUN npm install
 
