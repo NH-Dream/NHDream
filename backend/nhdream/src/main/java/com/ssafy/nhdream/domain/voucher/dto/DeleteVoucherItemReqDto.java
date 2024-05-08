@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
 @Data
-@Slf4j
 public class DeleteVoucherItemReqDto {
 
     @Schema(description = "삭제하려는 상품 ID", example = "1")
