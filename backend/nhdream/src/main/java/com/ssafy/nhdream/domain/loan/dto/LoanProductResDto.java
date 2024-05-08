@@ -4,16 +4,16 @@ import lombok.Builder;
 import lombok.Getter;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
 
+@Builder
 @Getter
-public class LoanProductReqDto {
+public class LoanProductResDto {
 
-    private int id;
     private String name;
     private BigDecimal amountRange;
     private BigDecimal minRate;
     private BigDecimal preferredRate1;
     private BigDecimal preferredRate2;
+
 
 }
