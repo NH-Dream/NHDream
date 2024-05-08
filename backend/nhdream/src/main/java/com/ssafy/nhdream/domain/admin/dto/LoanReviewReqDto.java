@@ -6,16 +6,12 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Schema(description = "유저 인증 승인 요청 DTO")
-public class ReviewReqDto {
+@Schema(description = "대출 인증 승인 요청 DTO")
+public class LoanReviewReqDto {
 
-    @Schema(description = "신청자 PK")
-    private int userId;
-
-    @Schema(description = "신청 게시물 PK")
+    @Schema(description = "대출 신청 PK")
     private int applyPostId;
 
     @Schema(description = "심사 결과")
     private int result;
-
 }
