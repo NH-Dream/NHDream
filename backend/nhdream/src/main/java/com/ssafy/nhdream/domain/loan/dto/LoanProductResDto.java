@@ -11,9 +11,13 @@ public class LoanProductResDto {
 
     private String name;
     private BigDecimal amountRange;
-    private BigDecimal minRate;
-    private BigDecimal preferredRate1;
-    private BigDecimal preferredRate2;
+    private BigDecimal farmerRate24;
+    private BigDecimal farmerRate12;
+    private BigDecimal farmerRate06;
+    private BigDecimal trainRate24;
+    private BigDecimal trainRate12;
+    private BigDecimal trainRate06;
+
 
 
 }
