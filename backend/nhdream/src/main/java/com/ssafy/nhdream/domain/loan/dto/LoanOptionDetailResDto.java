@@ -10,6 +10,7 @@ import java.time.LocalDate;
 @Getter
 public class LoanOptionDetailResDto {
 
+    private int id;
     private String name;
     private LocalDate startedAt;
     private LocalDate expirationAt;
