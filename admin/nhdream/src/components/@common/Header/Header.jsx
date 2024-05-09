@@ -1,10 +1,8 @@
 
-
-
-
-const Header = () => {
+const Header = ({label}) => {
     return (
-        <div >
+        <div className="w-full h-20 bg-blue-400">
+            <h1>{label}</h1>
         </div>
     );
 };
