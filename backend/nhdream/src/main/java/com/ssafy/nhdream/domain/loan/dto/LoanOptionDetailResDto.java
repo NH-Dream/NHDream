@@ -13,6 +13,7 @@ public class LoanOptionDetailResDto {
     private String name;
     private LocalDate startedAt;
     private LocalDate expirationAt;
+    private int term;
     private BigDecimal amount;
     private BigDecimal rate;
     private int paymentMethod;
