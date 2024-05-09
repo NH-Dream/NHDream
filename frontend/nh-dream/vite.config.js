@@ -12,4 +12,11 @@ export default defineConfig({
       }
     },
   ],
+  resolve: {
+    alias: [
+      { find: '@', replacement: '/src' },
+      { find: "@components", replacement: "/src/components" },
+    ],
+  },
+  base: '/',
 })
