@@ -12,8 +12,6 @@ public class LoanOptionDetailResDto {
 
     private int id;
     private String name;
-    private LocalDate startedAt;
-    private LocalDate expirationAt;
     private int term;
     private BigDecimal amount;
     private BigDecimal rate;
