@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 @Builder
 public class LoanListDto {
 
+    private int id;
     @NotBlank
     private String name;
     @NotBlank
