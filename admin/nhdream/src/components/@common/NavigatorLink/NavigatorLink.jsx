@@ -1,15 +1,15 @@
 import { useNavigate } from 'react-router-dom';
 
-const SideBarLink = ({label, link}) => {
+const NavigatorLink = ({label, link}) => {
     const navigate = useNavigate();
 
-    return (
+    return(
         <div>
             <div onClick={() => navigate(link)}>
                 {label}
             </div>
-        </div>   
-    );
-};
+        </div>
+    )
+}
 
-export default SideBarLink;
+export default NavigatorLink;
