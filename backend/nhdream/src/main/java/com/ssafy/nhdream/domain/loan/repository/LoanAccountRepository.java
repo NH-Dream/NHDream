@@ -8,4 +8,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface LoanAccountRepository extends JpaRepository<LoanAccount, Integer> {
 
+    @Query("SELECT l FROM LoanAccount l WHERE " +
+            " ")
+    LoanAccount findByApprovalId(int id);
+
 }
