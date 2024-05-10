@@ -1,7 +1,3 @@
-package com.ssafy.nhdream.domain.frdeposit.repository;
-
-import com.ssafy.nhdream.entity.transfer.AutomaticTransferTask;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface AutomaticTransferTaskRepository extends JpaRepository<AutomaticTransferTask, Integer> {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7c9f7649a1589a8109f689e3231eccffe20f1f4441ae0f8705605d347447df11
+size 804
