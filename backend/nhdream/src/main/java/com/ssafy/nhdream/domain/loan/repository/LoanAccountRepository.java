@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
 public interface LoanAccountRepository extends JpaRepository<LoanAccount, Integer> {
 
     @Query("SELECT l FROM LoanAccount l WHERE l.loanApproval.id = :id")
-    LoanAccount findByApprovalId(int id);:
+    LoanAccount findByApprovalId(int id);
 
 }
