@@ -4,7 +4,7 @@ import TopBar from "../../../components/common/topBar";
 export default function SavingDetailPage() {
   return (
     <div>
-      <TopBar title="예/적금 조회" color="#C8F0C5"/>
+      <TopBar title="적금상세정보" color="#C8F0C5"/>
       <SavingDetailComponent />
     </div>
   )
