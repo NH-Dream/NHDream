@@ -1,18 +1,3 @@
-import api from './api';
-
-function DepositList(success, fail) {
-  api.get('/redeposit')
-      .then(response => success(response.data.dataBody))
-      .catch(error => fail(error))
-}
-
-function DepositDetail(id, success, fail) {
-  api.get(`/redeposit/${id}`)
-  .then(response => success(response.data.dataBody))
-  .catch(error => fail(error))
-}
-
-  export {
-    DepositList,
-    DepositDetail,
-  }
+version https://git-lfs.github.com/spec/v1
+oid sha256:90c01b777635c29ed29d4a726254635bb315f1de43fe0eaa5fd015fb1ef010be
+size 595
