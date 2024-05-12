@@ -1,14 +1,3 @@
-import NavigatorLink from "@components/@common/NavigatorLink/NavigatorLink"
-
-const Navigator = ({links}) => {
-
-    return(
-        <div className="flex w-40 h-10 border-b-2" >
-            {links.map((link, index) => (
-                <NavigatorLink key={index} label={link.label} link={link.link} />
-            ))}
-        </div>
-    )
-}
-
-export default Navigator;
+version https://git-lfs.github.com/spec/v1
+oid sha256:7c481a2931760f8029aa42c06e5e9629a3559eeb5f8ed0b34b61b4f8e57bb163
+size 838
