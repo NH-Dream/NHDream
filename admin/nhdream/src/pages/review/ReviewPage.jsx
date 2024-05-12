@@ -1,17 +1,3 @@
-import Header from "@components/@common/Header/Header";
-import SideBar from "@components/@common/SideBar/SideBar";
-import ReviewContent from "@components/review/ReviewContent";
-
-const ReviewPage = () => {
-    return (
-        <div className="flex w-screen h-screen">
-            <SideBar/>
-            <div className="flex-1 h-full bg-slate-500">
-                <Header label={"review"}></Header>
-                <ReviewContent />
-            </div>
-        </div>
-    );
-};
-
-export default ReviewPage;
+version https://git-lfs.github.com/spec/v1
+oid sha256:b0d497c6b4abfa95c3cc9d4019e09aed83f40e07b4f43e3b2e8081a1157328ff
+size 520

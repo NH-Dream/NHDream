@@ -12,6 +12,7 @@ module.exports = {
       },
       spacing: {
         SIDEBAR: '255px',
+        HEIGHT: '600px'
       },
 
     },
