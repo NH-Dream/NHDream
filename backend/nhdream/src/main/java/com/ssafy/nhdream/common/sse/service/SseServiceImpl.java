@@ -1,19 +1,3 @@
-package com.ssafy.nhdream.common.sse.service;
-
-import org.springframework.stereotype.Service;
-import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
-
-@Service
-public class SseServiceImpl implements SseService {
-
-    @Override
-    public SseEmitter subscribe(String userId, String lastEventId) {
-        return null;
-    }
-
-    @Override
-    public void sendTest(String userId) {
-
-    }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4634f2ae7e7c7d05281cbb8240a29a629c1df66873452c94cdc6b2ef932689f4
+size 4838
