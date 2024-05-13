@@ -1,0 +1,5 @@
+.wallet-address {
+  display: inline-block;
+  max-width: 100%; 
+  overflow-wrap: break-word;
+}
