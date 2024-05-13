@@ -9,10 +9,10 @@ import java.math.BigDecimal;
 @Slf4j
 public class BuyVoucherItemReqDto {
 
-    private int walletAddress;
+    private String loginId;
     private int itemId;
     private int amount;
-    private BigDecimal usingNHDC;
-    private BigDecimal usingDRDC;
+    private int usingNHDC;
+    private int usingDRDC;
 
 }
