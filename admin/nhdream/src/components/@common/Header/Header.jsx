@@ -1,8 +1,8 @@
 
 const Header = ({label}) => {
     return (
-        <div className="w-full h-20 bg-blue-400">
-            <h1>{label}</h1>
+        <div className="w-full h-16 bg-CONTENT">
+            <div className="pt-3 pl-5 text-3xl font-bold">{label}</div>
         </div>
     );
 };
