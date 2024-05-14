@@ -1,4 +1,4 @@
-package com.ssafy.nhdream.common.sse.controller;
+package com.ssafy.nhdream.domain.sse.controller;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
