@@ -16,5 +16,5 @@ public class GetAutomaticTransferDetailResDto {
     private int id;
     private BigDecimal amount;
     private int transferDay;
-    private LocalDate expiredDate;
+    private String expiredDate;
 }
