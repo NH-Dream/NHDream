@@ -1,7 +1,7 @@
 import Back from '../../assets/images/topbar/back.png'
 import { useNavigate } from 'react-router-dom'
 
-export default function TopBar({ title, color }){
+export default function TopBar({ title, color,showBackIcon = true}){
   const navigate = useNavigate()
 
   const handleBack = ()=>{
@@ -10,7 +10,9 @@ export default function TopBar({ title, color }){
 
   return(
     <div className='flex p-3' style={{ backgroundColor:color }}>
+      {showBackIcon &&(
       <img src={Back} alt="" style={{width:15}} onClick={handleBack}/>
+      )}
       <h1 className='font-bold text-xl ml-3'>{title}</h1>
     </div>
   )
