@@ -1,16 +1,3 @@
-package com.ssafy.nhdream.domain.admin.service;
-
-import com.ssafy.nhdream.domain.admin.dto.LoanReviewReqDto;
-import com.ssafy.nhdream.domain.admin.dto.ReviewReqDto;
-
-public interface AdminService {
-
-    // 교육 인증 심사
-    void reviewTraning(ReviewReqDto reviewReqDto);
-
-    // 농부 인증 심사
-    void reviewFarmer(ReviewReqDto reviewReqDto);
-
-    // 대출 인증 심사
-    void reviewLoan(LoanReviewReqDto loanReviewReqDto);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7396d23d670af2d9692d2443fab4894628e14d1be0481afcb6f7f63feae516a8
+size 745
