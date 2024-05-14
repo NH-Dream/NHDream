@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public interface NotificationRepositoryQuerydsl {
 
-    @Query("SELECT n FROM Notification n WHERE n.sender.id = :userId")
+    @Query("SELECT n FROM Notification n WHERE n.user.id = :userId")
     List<Notification> getNoticeAllByUserId(int userId);
 
 }
