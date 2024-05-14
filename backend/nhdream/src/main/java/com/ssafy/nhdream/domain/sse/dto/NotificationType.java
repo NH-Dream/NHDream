@@ -1,4 +1,4 @@
-package com.ssafy.nhdream.common.sse.dto;
+package com.ssafy.nhdream.domain.sse.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

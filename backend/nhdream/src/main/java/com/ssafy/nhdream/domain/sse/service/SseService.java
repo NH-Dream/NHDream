@@ -1,6 +1,6 @@
-package com.ssafy.nhdream.common.sse.service;
+package com.ssafy.nhdream.domain.sse.service;
 
-import com.ssafy.nhdream.common.sse.dto.SseDto;
+import com.ssafy.nhdream.domain.sse.dto.SseDto;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
 public interface SseService {
