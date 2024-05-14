@@ -5,7 +5,7 @@ import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
 public interface SseService {
 
-    SseEmitter subscribe (String userId, String lastEventId);
+    SseEmitter subscribe (int id, String lastEventId);
     void sendTest(String userId);
     void send (SseDto sseDto);
 }
