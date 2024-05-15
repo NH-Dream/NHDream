@@ -1,0 +1,9 @@
+/* 입금 토스트 스타일 */
+.deposit-toast {
+  background-color: #B8F5C2; 
+}
+
+/* 출금 토스트 스타일 */
+.withdrawal-toast {
+  background-color: #F49090;
+}

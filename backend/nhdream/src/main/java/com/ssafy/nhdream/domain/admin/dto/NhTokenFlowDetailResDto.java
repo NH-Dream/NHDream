@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @Setter
 @AllArgsConstructor
 @Builder
-public class NhTokenFlowResDetailDto {
+public class NhTokenFlowDetailResDto {
     private int id;
     private LocalDate referenceDate;
     private long mintAmount;
