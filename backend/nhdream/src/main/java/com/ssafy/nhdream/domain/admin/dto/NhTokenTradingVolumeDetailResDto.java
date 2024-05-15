@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @Setter
 @AllArgsConstructor
 @Builder
-public class NhTokenTradingVolumeDetailDto {
+public class NhTokenTradingVolumeDetailResDto {
     private int id;
     private long tradeAmount;
     private LocalDate referenceDate;
