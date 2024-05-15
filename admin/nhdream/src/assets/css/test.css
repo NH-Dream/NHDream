@@ -1,0 +1,33 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.even-spacing {
+  letter-spacing: 0.3em;  /* 글자 간격 조정 */
+  justify-content: center;  /* 중앙 정렬 */
+}
+
+
+.font {
+  font-size: large;
+  font-family : 'Pretendard-Regular'
+}
+
+.font-bold {
+  font-size: large;
+  font-family : 'Pretendard-SemiBold'
+}
+
+.logout {
+  margin-top: 7rem
+}
+
+.bgLogin {
+  background-color: #E6FEEC;
+}
+
+.bgLogin2 {
+  background-color: #F5FFF8;
+}
