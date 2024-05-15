@@ -6,7 +6,13 @@ function getLoanReviewList(success, fail) {
     .catch(error => fail(error))
 }
 
+function getLoanReviewDetail(loanReviewId, success, fail) {
+    api.get(`/admins/review/loan/${loanReviewId}`)
+    .then(response => success(response.data.dataBody))
+    .catch(error => fail(error))
+}
 
 export {
     getLoanReviewList, 
+    getLoanReviewDetail,
 }
