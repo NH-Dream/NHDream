@@ -13,6 +13,4 @@ import java.math.BigInteger;
 @Builder
 public class PersonalWalletCountResDto {
     private int count;
-
-
 }
