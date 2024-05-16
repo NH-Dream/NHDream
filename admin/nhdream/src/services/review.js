@@ -1,12 +1,3 @@
-import api from '@/services/api'
-
-function getLoanReviewList(success, fail) {
-    api.get('/admins/review/loan')
-    .then(response => success(response.data.dataBody))
-    .catch(error => fail(error))
-}
-
-
-export {
-    getLoanReviewList, 
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6814d23cb8db4f07c774638f5522c4614e9b46fc622a7c7236a4b455e3b3dc08
+size 769

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2819ebeff46dbc46042aad566a55c7981a6d1dc7309bbdf24b34327de47078ac
-size 536
+package com.ssafy.nhdream.domain.admin.dto;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+import java.util.List;
+
+@Getter
+@AllArgsConstructor
+public class LoanReviewResDto {
+
+    private int totalPage;
+
+    List<LoanReviewContentDto> loanReviewContentDtoList;
+
+}
