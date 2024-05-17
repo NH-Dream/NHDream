@@ -1,22 +1,3 @@
-import { useNavigate } from 'react-router-dom';
-import { navStore } from "@/stores/navStore";
-
-const SideBarLink = ({label, link, curPosition}) => {
-    const navigate = useNavigate();
-    const store = navStore();
-
-    const changeCategory = (name) => {
-        navigate(link)
-        store.setCurPosition(name)
-    }
-
-    return (
-        <div>
-            <div onClick={() => changeCategory(curPosition)}>
-                {label}
-            </div>
-        </div>   
-    );
-};
-
-export default SideBarLink;
+version https://git-lfs.github.com/spec/v1
+oid sha256:87307b989af9e9a6f0a49487641afaefcf6ab0ee8a23a8ff2169def94b731a11
+size 678
