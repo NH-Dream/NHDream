@@ -9,7 +9,7 @@ public enum NotificationType {
     SSE_CONNECT("connect", "SSE 연결성공"),
     TEST_MSG("test", "테스트 메시지"),
     DREAM_EVENT("dream", "sse 메세지 전송완료"),
-    LOAN_EVENT("loan", "대출 sse 메세지 전송완료")
+    LOAN_EVENT("product", "상품 sse 메세지 전송완료")
     ;
 
 
