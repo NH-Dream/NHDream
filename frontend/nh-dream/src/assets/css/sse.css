@@ -13,3 +13,11 @@
   font-size: 20px;  
   color: #000000;
 }
+
+/* 상품가입 토스트 스타일 */
+.product-toast {
+  background-color: #ccc;
+  font-weight: 600;
+  font-size: 20px;  
+  color: #000000;
+}
