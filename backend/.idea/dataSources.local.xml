@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1ef9271666133a82e7128dd37bb5e68353d08e921dd5a7b1bcd262097d4b05e1
-size 957
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-241.15989.150">
+    <data-source name="nhdream@k10s209.p.ssafy.io" uuid="98f27e07-d354-4d22-aff6-d3efd7240a86">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" />
+      <user-name>root</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="nhdream@localhost" uuid="63894de7-97c1-414f-a01f-9c7bea940b08">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" />
+      <user-name>root</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="0@k10s209.p.ssafy.io" uuid="f2ff9fcd-ece7-4f41-8253-c4e1f0a39eb6">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="REDIS" />
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

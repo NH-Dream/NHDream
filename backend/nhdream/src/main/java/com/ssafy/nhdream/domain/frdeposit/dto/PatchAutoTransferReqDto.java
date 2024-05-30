@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fa403c2614b0be4ad34a1e7fffd2ef490ea6e16ef421ec6502a18b518f2a3a5a
-size 794
+package com.ssafy.nhdream.domain.frdeposit.dto;
+
+import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.Future;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import lombok.Getter;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
+@Getter
+public class PatchAutoTransferReqDto {
+
+    //이체돈
+    @DecimalMin(value = "0.01", message = "이체량은 0보다 커야합니다.")
+    private BigDecimal amount;
+
+    @Min(value = 1, message = "월 지정일은 1일 이상이여야합니다.")
+    @Max(value = 31, message = "월 지정일은 31일 이하여야합니다.")
+    private int transferDate;
+
+    @Future(message = "만기일은 최소 오늘 이후여야 합니다.")
+    private LocalDate expiredAt;
+}

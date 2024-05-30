@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c391043ab1e5928b8913b67e711ef0eeaaf83da103d393b16c641687d0e2d648
-size 938
+
+
+const LoanData = ({data, index, changeModalStatus, activeIndex}) => {
+
+    return(
+        <>
+            <tr className="hover" onClick={()=> changeModalStatus(data.loanReviewId, data.approvalStatus)}>
+                <th>{data.curReviewCnt}</th>
+                <td>{data.productName}</td>
+                <td>{data.userName}</td>
+                <td>{data.loanAmount.toLocaleString()}</td>
+                <td>{data.interestRate}</td>
+                <td>{data.applicationDate}</td>
+                <td className="flex justify-center items-center">
+                    <div className={`badge ${data.approvalStatus === 'APPROVED' ? 'bg-APPROVAL text-[#1E7572] font-bold' : data.approvalStatus === 'PENDING' ? 'bg-[#A2A2A2] font-bold' : 'bg-REJECT text-[#FF0000] font-bold'}`}>
+                        {data.approvalStatus}
+                    </div>
+                </td>
+            </tr>
+        </>
+    )
+}
+
+export default LoanData;

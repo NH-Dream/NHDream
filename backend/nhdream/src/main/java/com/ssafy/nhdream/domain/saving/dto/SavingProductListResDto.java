@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:06d59df264a2539af82d94493dea7d884cbffe1d2b3aa40a0faf08f03e844916
-size 627
+package com.ssafy.nhdream.domain.saving.dto;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
+
+@Getter
+@NoArgsConstructor
+public class SavingProductListResDto {
+
+    private int id;
+    private String name;
+    private BigDecimal maxInterestRate;
+    private BigDecimal maxMonthlyLimit;
+
+    @Builder
+    public SavingProductListResDto(int id, String name, BigDecimal maxInterestRate, BigDecimal maxMonthlyLimit) {
+        this.id = id;
+        this.name = name;
+        this.maxInterestRate = maxInterestRate;
+        this.maxMonthlyLimit = maxMonthlyLimit;
+    }
+}

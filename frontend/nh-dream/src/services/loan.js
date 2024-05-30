@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:301e9bd8df26149c4698b27abb4dfa0cbfbfac63b6eee728c6c3dabb85b345b6
-size 1007
+import api from './api';
+
+function LoanList(success, fail) {
+  api.get('/loans/list')
+  .then(response => success(response.data.dataBody.loanListDtos))
+  .catch(error => fail(error))
+}
+
+function LoanDetail(id, success, fail) {
+  api.get(`/loans/product/${id}`)
+  .then(response => success(response.data.dataBody))
+  .catch(error => fail(error))
+}
+
+function LoanJoin1(loanInfo, success, fail) {
+  api.post('/loans/option', loanInfo)
+  .then(response => success(response.data.dataBody))
+  .catch(error => fail(error))
+}
+
+function LoanJoinInfo(optionId, success, fail) {
+  api.get(`/loans/option?id=${optionId}`)
+  .then(response => success(response.data.dataBody))
+  .catch(error => fail(error))
+}
+
+function LoanJudge(userId, optionId, document, success, fail) {
+  api.post(`/loans/approval?userId=${userId}&loanOptionId=${optionId}`, document)
+  .then(response => success(response.data.dataBody))
+  .catch(error => fail(error))
+}
+
+export {
+  LoanList,
+  LoanDetail,
+  LoanJoin1,
+  LoanJoinInfo,
+  LoanJudge
+}

@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dfbac65a2beba95ed1fce641432644a06bcff04835c54112460d01d31476de74
-size 625
+package com.ssafy.nhdream.domain.voucher.dto;
+
+import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+
+@Data
+public class AffiliateListResDto {
+
+    private String name;
+
+    private String walletAddress;
+
+    private String walletPrivateKey;
+
+    private LocalDateTime createdAt;
+
+    public AffiliateListResDto(String name, String walletAddress, String walletPrivateKey, LocalDateTime createdAt) {
+        this.name = name;
+        this.walletAddress = walletAddress;
+        this.walletPrivateKey = walletPrivateKey;
+        this.createdAt = createdAt;
+    }
+}

@@ -1,3 +1,118 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e842413c1e6c8dd4101a6ac43e40eeded9842ca2d4c9689db38d5ed3f1049945
-size 2749
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  config:
+    import:
+      - classpath:application-key.yml
+  profiles:
+
+
+    active: ${db.environment} # 기본설정
+    group:
+      local:
+        - db-local
+      server:
+        - db-server
+    include:
+      - key
+      - db
+  data:
+    redis:
+      host: ${redis.host}
+      port: ${redis.port}
+      password: ${redis.password}
+
+  # JPA 설정
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          time_zone: Asia/Seoul
+    show-sql: true
+    defer-datasource-initialization: true
+    open-in-view: false
+
+  # S3 설정
+  cloud:
+    aws:
+      credentials:
+        access-key: ${s3.access-key}
+        secret-key: ${s3.secret-key}
+      s3:
+        bucket: yeopbucket
+      region:
+        static: ap-northeast-2
+      stack:
+        auto: false
+  # S3 파일 용량 제한
+  servlet:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: -1
+
+  # 메일 설정
+  mail:
+    # 서버 주소
+    host: ${mail.host}
+    # 메일 인증 서버 포트 (587, 465 존재, SSL은 465)
+    port: ${mail.port}
+    # 아이디
+    username: ${mail.username}
+    # 비밀번호
+    password: ${mail.password}
+    properties:
+      # 메일 디버그 모드 설정 (전송 과정 로그 출력)
+      debug: true
+      mail:
+        smtp:
+          # SMTP 인증 활성화 (활성시 로그인 때 계정 정보 필요)
+          auth: true
+          ssl:
+            # SSL 보안 설정 (전송 과정 데이터 암호화 제공)
+            enable: true
+            # 신뢰할 수 있는 SMTP 서버 호스트 지정
+            trust: ${mail.host}
+          # STARTTLS 연결을 활성화 (평문 통신 채널에서 암호화 통신 채널로 업그레이드)
+          starttls.enable: true
+
+  # JWT secret key
+  jwt:
+    secret: ${jwt.secret}
+
+  # 공공데이터
+  openAPI:
+    serviceKey: ${openApi.serviceKey}
+
+  # NHDC토큰관련
+  NHDC:
+    privateKey: ${NHDC.privateKey}
+    address: ${NHDC.address}
+    contractAddress: ${NHDC.contractAddress}
+
+  # Saving컨트랙트
+  saving:
+    contractAddress: ${saving.contractAddress}
+
+
+
+springdoc:
+  default-consumes-media-type: application/json;charset=UTF-8
+  default-produces-media-type: application/json;charset=UTF-8
+  api-docs:
+    groups:
+      enabled: true
+  swagger-ui:
+    operations-sorter: alpha # alpha(알파벳 오름차순), method(HTTP메소드순)
+    tags-sorter: alpha # 태그 정렬 기준
+    path: /swagger-ui.html # html 문서 접속 경로
+    disable-swagger-default-url: true
+    doc-expansion: none # tag, operation 펼치는 방식
+  paths-to-match:
+    - /**

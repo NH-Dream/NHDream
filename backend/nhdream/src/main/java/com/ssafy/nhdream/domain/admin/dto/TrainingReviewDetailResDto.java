@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:664fa1479a3640cf894e0363614a1309371aeed24586da79ae93e76d8171493d
-size 514
+package com.ssafy.nhdream.domain.admin.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+
+import java.time.LocalDate;
+
+@Getter
+@Builder
+@AllArgsConstructor
+public class TrainingReviewDetailResDto {
+
+    private int userId;
+
+    private String userName;
+
+    private String email;
+
+    private String phone;
+
+    private LocalDate birthDate;
+
+    private String trainingName;
+
+    private String trainingInstitution;
+
+    private int ordinal;
+
+    private String certificate;
+
+
+}

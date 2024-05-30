@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3092576017860abbb90362dcceaeebbf0ac3037498dce80273f816dffc3dc5b6
-size 617
+package com.ssafy.nhdream.domain.frdeposit.repository;
+
+import com.ssafy.nhdream.domain.frdeposit.dto.FrDepositBalanceResDto;
+import com.ssafy.nhdream.entity.frdeposit.FrDepositAccount;
+import com.ssafy.nhdream.entity.user.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import java.util.Optional;
+
+public interface FrDepositAccountRepository extends JpaRepository<FrDepositAccount,Integer> {
+
+    Optional<FrDepositAccount> findFrDepositAccountByContractAddress(String walletAddress);
+    Optional<FrDepositAccount> findByUser(User user);
+}

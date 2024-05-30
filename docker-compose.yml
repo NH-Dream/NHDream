@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bf0b82cb757b98e6bf7083c23bcc7e28bc273e69294845e9248470f43fecafbf
-size 665
+services:
+  nh_frontend:
+    container_name: nhfrontend
+    build:
+      context: ./
+      dockerfile: frontend/nh-dream/Dockerfile
+    ports:
+      - "80:80"                     
+      - "443:443"
+      - "1322:1322"
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt
+      - /var/lib/letsencrypt:/var/lib/letsencrypt
+      - /home/ubuntu/conf:/etc/nginx/conf.d
+    networks:
+      - nh_network
+
+  nh_backend:
+    container_name: nhbackend
+    build:
+      context: ./backend/nhdream
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - nh_network
+    environment:
+      - TZ=Asia/Seoul
+
+networks:
+  nh_network:
+    driver: bridge

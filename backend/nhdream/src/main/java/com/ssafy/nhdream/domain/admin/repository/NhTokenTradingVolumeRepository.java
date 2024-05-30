@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c31ead73eb48e7c3b43977633d273724075b1914b912cf05e6bf0afe29604960
-size 632
+package com.ssafy.nhdream.domain.admin.repository;
+
+import com.ssafy.nhdream.entity.admin.NhTokenTradingVolume;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import java.time.LocalDate;
+import java.util.List;
+
+public interface NhTokenTradingVolumeRepository extends JpaRepository<NhTokenTradingVolume, Integer> {
+    @Query("SELECT nttv FROM NhTokenTradingVolume nttv WHERE nttv.referenceDate between :startDate and :endDate ORDER BY nttv.referenceDate")
+    List<NhTokenTradingVolume> findNhTokenTradingVolumeByDates(LocalDate startDate, LocalDate endDate);
+}

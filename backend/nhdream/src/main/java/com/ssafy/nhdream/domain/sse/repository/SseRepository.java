@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:76de3761ce45eb27494da8fdd3436dbf2b8d1c6473a909ad5a07a8f492a5fc2e
-size 758
+package com.ssafy.nhdream.domain.sse.repository;
+
+
+import com.ssafy.nhdream.domain.sse.dto.SseDto;
+import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
+
+import java.util.Map;
+
+public interface SseRepository {
+
+    SseEmitter save(String emitterId, SseEmitter sseEmitter);
+
+    void saveEventCache(String eventId, SseDto event);
+
+    Map<String, SseEmitter> findAllEmitter();
+
+    Map<String, SseEmitter> findAllEmitterStartWithByUserId(String userId);
+
+    public SseEmitter findEmitterByUserId(String userId);
+
+    Map<String, SseDto> findAllEventCacheStartWithByUserId(String userId);
+
+    void deleteById(String id);
+
+    void deleteAllEmitterStartWithUserId(String userId);
+
+    void deleteAllEventCacheStartWithId(String userId);
+
+}

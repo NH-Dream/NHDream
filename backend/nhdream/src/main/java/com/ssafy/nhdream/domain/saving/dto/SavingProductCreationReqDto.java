@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac9009c05e17519bf402b5860639a720fa2c0f9ff66540287b53d4f644d3f8db
-size 788
+package com.ssafy.nhdream.domain.saving.dto;
+
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
+import java.util.List;
+
+@Getter
+@NoArgsConstructor
+public class SavingProductCreationReqDto {
+    @NotBlank(message = "이름은 공백일 수 없습니다.")
+    private String name;
+
+    @DecimalMin(value = "0.0", inclusive = false, message = "최대월납입금액은 0원 초과여야합니다.")
+    private BigDecimal maxMonthlyLimit;
+
+    @NotEmpty(message = "옵션은 비어있을 수 없습니다.")
+    @Valid
+    private List<SavingOptionCreationReqDto> options;
+
+}

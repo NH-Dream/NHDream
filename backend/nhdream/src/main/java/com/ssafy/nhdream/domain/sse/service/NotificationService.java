@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:50ad6052945e81f1cf32d90afb531d7b08872e88fd7d3b2ac5b41e96dfccaa68
-size 568
+package com.ssafy.nhdream.domain.sse.service;
+
+import com.ssafy.nhdream.domain.sse.dto.NotificationType;
+import com.ssafy.nhdream.domain.sse.entity.Notification;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import java.math.BigDecimal;
+
+public interface NotificationService {
+
+    Notification saveNotice(NotificationType notificationType, int userId, BigDecimal amount, int trade, int state, String name);
+
+//    List<SseDto> getNoticeList(int id);
+
+//    void readNotice(Long id, UserDetails loginUser);
+
+    void notificationTest (int id);
+
+}

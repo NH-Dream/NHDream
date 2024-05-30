@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9bf0419aa67cb1a4bccaab2ff77b4e4850f033f0a39472733883c2d5af8332cd
-size 846
+package com.ssafy.nhdream.domain.redeposit.repository;
+
+import com.ssafy.nhdream.domain.redeposit.dto.RedepositProductListDto;
+import com.ssafy.nhdream.entity.redeposit.ReDepositProduct;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import java.util.List;
+
+public interface RedepositProductRepository extends JpaRepository<ReDepositProduct, Integer> {
+
+    @Query("SELECT new com.ssafy.nhdream.domain.redeposit.dto.RedepositProductListDto(rp.id, rp.name, " +
+            "GREATEST(ro.rate + ro.preferredRate1, ro.rate + ro.preferredRate2), rp.amountRange) " +
+            "FROM ReDepositProduct rp " +
+            "JOIN rp.reDepositOptions ro " +
+            "WHERE ro.term = 24 AND rp.isActive = true")
+    List<RedepositProductListDto> findReDepositProductsWithTerm24();
+
+}
