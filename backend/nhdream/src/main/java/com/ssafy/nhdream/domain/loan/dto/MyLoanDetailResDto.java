@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b1b7b6e7aafabea2b0292c5ff91193dd6b011f3f496dc3278588211524a11264
-size 658
+package com.ssafy.nhdream.domain.loan.dto;
+
+import com.ssafy.nhdream.entity.loan.LoanApproval;
+import lombok.Builder;
+import lombok.Getter;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+@Getter
+@Builder
+public class MyLoanDetailResDto {
+
+    private int approval;
+    private String name;
+    private BigDecimal paidPrincipal;
+    private BigDecimal principal;
+    private BigDecimal interest;
+    private BigDecimal outstandingAmount;
+    private LocalDate startedAt;
+    private LocalDate expirationAt;
+    private int term;
+    private int round;
+    private int paymentMethod;
+    private int paymentDate;
+
+}

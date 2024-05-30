@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0336b3acd44b39fee989a4ff6702ee825af2a9237c4521172831254889e94dee
-size 557
+package com.ssafy.nhdream.common.redis;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.ToString;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.redis.core.RedisHash;
+
+@Getter
+@ToString
+@RedisHash(value = "email_auth", timeToLive = 60*60*24*3)
+public class EmailAuth {
+
+    // 식별ID
+    @Id
+    private String email;
+
+    // 인증번호
+    private String randomNum;
+
+    @Builder
+    public EmailAuth(String email, String randomNum) {
+        this.email = email;
+        this.randomNum = randomNum;
+    }
+}
+

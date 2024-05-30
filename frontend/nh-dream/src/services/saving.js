@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c3b2c3988dc7f713fd3f4b4609626951df8e6674c2b5adbe7698909c219506c3
-size 673
+import api from './api';
+
+// 적금 전체 목록
+function SavingList(success, fail) {
+  api.get('/savings')
+      .then(response => success(response.data.dataBody))
+      .catch(error => fail(error))
+}
+
+// 적금 상세 조회
+function SavingDetail(id, success, fail) {
+  api.get(`/savings/${id}`)
+  .then(response => success(response.data.dataBody))
+  .catch(error => fail(error))
+}
+
+// 적금 가입
+function SavingJoin(id, savingInfo, success, fail) {
+  api.post(`/savings/${id}`, savingInfo)
+  .then(response => success(response.data.dataBody))
+  .catch(error => fail(error.response.data.dataHeader))
+}
+
+  export {
+    SavingList,
+    SavingDetail,
+    SavingJoin,
+  }

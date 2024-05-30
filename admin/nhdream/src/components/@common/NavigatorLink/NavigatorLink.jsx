@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8fdb4143280db6f56b9ef42cbc896621264dea07a4bae2f2518c068b2886e88e
-size 533
+import { useNavigate } from 'react-router-dom';
+
+const NavigatorLink = ({label, link, onClick, clicked}) => {
+    
+    const navigate = useNavigate();
+
+    const clickNav = () => {
+        navigate(link)
+        onClick()
+    }; 
+
+    return(
+        <div>
+            <div 
+                className={`mr-8 text-base font-semibold ${clicked ? 'text-[#42C3A8]' : 'text-black'}`} 
+                onClick={() => clickNav()}
+            >
+                {label}
+            </div>
+        </div>
+    )
+}
+
+export default NavigatorLink;

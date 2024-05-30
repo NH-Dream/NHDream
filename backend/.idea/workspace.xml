@@ -1,3 +1,135 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ebf574881c83ac2642f7d4fe3564b6d6ed95385318a51b60ebf02657b52601b8
-size 6407
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e868f377-6f91-4e58-8128-bc393b8ee220" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nhdream/src/main/java/com/ssafy/nhdream/domain/saving/service/SavingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/nhdream/src/main/java/com/ssafy/nhdream/domain/saving/service/SavingServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/nhdream">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="nhdream" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+    &quot;associatedIndex&quot;: 4
+    }</component>
+  <component name="ProjectId" id="2fkmbrzOI5YnKG6PVfUJRU8OtAL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build nhdream.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.NhdreamApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;BE/sse/fix&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\final\S10P31S209\backend\nhdream\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="NhdreamApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="nhdream.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ssafy.nhdream.NhdreamApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e868f377-6f91-4e58-8128-bc393b8ee220" name="Changes" comment="" />
+      <created>1714353524730</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714353524730</updated>
+      <workItem from="1714353525769" duration="3434000" />
+      <workItem from="1714435654413" duration="12481000" />
+      <workItem from="1714478844477" duration="7367000" />
+      <workItem from="1714534591627" duration="7068000" />
+      <workItem from="1714608275749" duration="13143000" />
+      <workItem from="1714694270373" duration="14226000" />
+      <workItem from="1714801502815" duration="10780000" />
+      <workItem from="1714890837317" duration="10903000" />
+      <workItem from="1714958102567" duration="22514000" />
+      <workItem from="1715040085203" duration="22903000" />
+      <workItem from="1715075009835" duration="8058000" />
+      <workItem from="1715521909975" duration="1382000" />
+      <workItem from="1715558321854" duration="19338000" />
+      <workItem from="1715592194257" duration="1214000" />
+      <workItem from="1715644895097" duration="3727000" />
+      <workItem from="1715743284016" duration="32470000" />
+      <workItem from="1715817449016" duration="6259000" />
+      <workItem from="1715852337948" duration="4065000" />
+      <workItem from="1715904027784" duration="14283000" />
+      <workItem from="1716027640755" duration="7509000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

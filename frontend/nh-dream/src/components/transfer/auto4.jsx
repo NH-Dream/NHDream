@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:595b3eabb59ab67f27c7669d70db715bc171d7d10f92c49fbfb1901d11148c2b
-size 741
+import TransferBottomBar from "../common/transferBottomBar"
+import "../../assets/css/app.css"
+import { useNavigate } from "react-router-dom"
+import Check from "../../assets/images/mypage/check2.png"
+
+export default function AutoTransfer4(){
+  const navigate = useNavigate()
+
+  const next = () =>{
+    navigate('/mypage/auto')
+  }
+
+  return(
+    <div>
+      <div className="transfer-container">
+        <div className="flex justify-center mb-5"><img src={Check} alt=""/></div>
+        <div className="text-2xl text-center font-bold mb-10">자동이체등록 완료!</div>
+      </div>
+      < TransferBottomBar
+      next={next} 
+      showCancel={false} 
+      buttonText="확인"
+      backgroundColor="rgb(88, 193, 189)"/>
+    </div>
+  )
+}

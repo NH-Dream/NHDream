@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:56830a1443a0d73525b1166c2a0fd9a43e56369818a821b2a9ffd0eefc4c8339
-size 1217
+package com.ssafy.nhdream.domain.frdeposit.dto;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+
+@Getter
+@NoArgsConstructor
+public class FrDepositTransactionListResDto {
+
+        private int id;
+        private int type;
+        private String oppositeAccount;
+        private String oppositeName;
+        private BigDecimal remainingBalance;
+        private String transactionHash;
+        private long tradeAmount;
+        private LocalDateTime tradedAt;
+
+        @Builder
+        public FrDepositTransactionListResDto(int id, int type, String oppositeAccount, String oppositeName,
+                                           BigDecimal remainingBalance, String transactionHash,
+                                              long tradeAmount, LocalDateTime tradedAt) {
+            this.id = id;
+            this.type = type;
+            this.oppositeAccount = oppositeAccount;
+            this.oppositeName = oppositeName;
+            this.remainingBalance = remainingBalance;
+            this.transactionHash = transactionHash;
+            this.tradeAmount = tradeAmount;
+            this.tradedAt = tradedAt;
+        }
+}

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bff9e57a2dde1b84a471f793888d861e6be9b2f3ef8fba9ff1d67d8b75cac3ef
-size 681
+export { default as SavingMainComponent } from './realSaving/savingMainComponent'
+export { default as SavingJoinDetailComponent } from "./realSaving/savingJoinDetailComponent"
+export { default as SavingJoinInfoComponent } from './realSaving/savingJoinInfoComponent'
+export { default as SavingJoinOkComponent } from './realSaving/savingJoinOk'
+export { default as DepositMainComponent } from './deposit/depositMainComponent'
+export { default as DepositJoinDetailComponent } from "./deposit/depositJoinDetailComponent"
+export { default as DepositJoinInfoComponent } from './deposit/depositJoinInfoComponent'
+export { default as DepositJoinOkComponent } from './deposit/depositJoinOk'

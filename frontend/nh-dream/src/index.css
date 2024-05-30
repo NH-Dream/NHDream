@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c24c3628e74706bf7ba0b86471b40f7b8ed3763c39cb13361ee4f8f21db9a5d6
-size 818
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Pretendard Light';
+  font-weight: 200;
+  font-display: swap;
+  src: local('Pretendard Light'),
+    url('../src/styles/fonts/Pretendard-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard SemiBold';
+  font-weight: 500;
+  font-display: swap;
+  src: local('Pretendard SemiBold'),
+    url('../src/styles/fonts/Pretendard-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard ExtraBold';
+  font-weight: 800;
+  font-display: swap;
+  src: local('Pretendard ExtraBold'),
+    url('../src/styles/fonts/Pretendard-ExtraBold.woff') format('woff');
+}
+body{
+  overflow-x:hidden;
+  font-family:'Pretendard SemiBold' ,sans-serif;
+}
+/* 
+html {
+  overscroll-behavior: none
+} */
+
+img {
+  user-select:none
+}

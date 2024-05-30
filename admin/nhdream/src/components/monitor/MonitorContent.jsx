@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b44c808fd9de4f7fc37f04607b2e5a28a4c032846067799c1abd6fa8e5205e6
-size 639
+import Navigator from "@components/@common/Navigator/Navigator"
+import { Outlet } from "react-router-dom";
+
+const MonitorContent = () => {
+
+    // 네비게이션 라벨 & 링크
+    const links = [
+        {
+            label: "NHDC", 
+            link: "/monitoring"
+        }, 
+        {
+            label: "DRDC", 
+            link: "/monitoring/drdc"
+        }
+    ]
+
+    return(
+        <div className="h-full bg-CONTENT">
+            <div className="flex justify-center w-full">
+                <Navigator links={links} />
+            </div>
+            
+            <Outlet/>
+        </div>
+    )
+}
+
+export default MonitorContent; 

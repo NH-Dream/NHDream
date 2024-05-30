@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ef4dbe3aef518e3addb71de36d5076f675293c5c24cc2cb93c18ba214955edf1
-size 518
+import LoanJoinCard from "./element/loanJoinCard"
+import LoanJoinData from "./element/loanJoinData"
+import { useParams } from "react-router"
+import "../../assets/css/container.css"
+import "../../assets/css/text.css"
+import "../../assets/css/button.css"
+import "../../assets/css/img.css"
+import "../../assets/css/size.css"
+
+export default function LoanJoinDetailComponent() {
+  const params = useParams()
+  return (
+    <div className="mx-3">
+      <LoanJoinCard params={params}/>
+      <LoanJoinData/>
+    </div>
+  )
+}

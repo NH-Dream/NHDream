@@ -1,3 +1,77 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5cfe5ebbb4aa993d5400c963e77cc06aa6d9df8483abf21c6e0400610eef637f
-size 1703
+.userBtn1 {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #1E7572;
+  color: white;
+  border: #1E7572 solid 0.5px;
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+}
+
+.userBtn2 {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  color: #1E7572;
+  border: #1E7572 solid 0.5px;
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+}
+
+.userCheckBtn {
+  width: 20%;
+  max-width: 80vw;
+  padding: 12px;
+  margin: 0px 0px 0px 10px;
+  border-radius: 10px;
+  background-color: rgb(167, 167, 167);
+  color: #000000;
+  border: rgb(167, 167, 167) solid 0.5px;
+  text-align: center;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.backgroundColor {
+  background-color: #1E7572;
+}
+
+.customBtn {
+    border-radius: 0.5rem;
+    border-color: #1E7572;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-width: 1px;
+    color: #1E7572;
+    background-color: white;
+}
+
+.selects {
+    appearance: none;
+    height: 2rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    border-radius: 0.5rem;
+
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b1, oklch(var(--b1) / var(--tw-bg-opacity)));
+    background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(1px + 50%), calc(100% - 16.1px) calc(1px + 50%);
+    background-size: 4px 4px, 4px 4px;
+    background-repeat: no-repeat;
+}
+
+.savingJoinBtn {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #D2F3E2;
+  color: black;
+  border: #D2F3E2 solid 0.5px;
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+}

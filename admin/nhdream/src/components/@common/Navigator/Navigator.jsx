@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c481a2931760f8029aa42c06e5e9629a3559eeb5f8ed0b34b61b4f8e57bb163
-size 838
+import NavigatorLink from "@components/@common/NavigatorLink/NavigatorLink"
+import { navStore } from "@/stores/navStore";
+
+const Navigator = ({links}) => {
+    const store = navStore(); 
+
+    const changeTag = (name) => {
+        store.setCurPosition(name)
+    }
+
+    return(
+        <div className="flex items-center w-5/6 h-10 border-b border-black" >
+            <div className="flex ml-2">
+                {links.map((link, index) => (
+                    <NavigatorLink 
+                        key={index} 
+                        label={link.label} 
+                        link={link.link}
+                        onClick={() => changeTag(link.label)}
+                        clicked={store.curPosition === link.label}
+                    />
+                ))}
+            </div>
+        </div>
+    )
+}
+
+export default Navigator;

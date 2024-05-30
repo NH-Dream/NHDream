@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:40d07e755fb296d73bc98a0e9e029307edfc93826da3a0ac69b6ef150baa78fe
-size 1439
+package com.ssafy.nhdream.domain.voucher.repository;
+
+import com.ssafy.nhdream.domain.voucher.dto.VoucherItemResDto;
+import com.ssafy.nhdream.entity.voucher.VoucherItem;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface VoucherItemRepository extends JpaRepository<VoucherItem, Integer> {
+
+    @Query("Select new com.ssafy.nhdream.domain.voucher.dto.VoucherItemResDto(VI.id, VI.title, VI.createdAt, VI.price, VI.quantity, VI.image, VI.type, VI.affiliate.name) " +
+            "From VoucherItem VI " +
+            "Where 1 = 1 ")
+    List<VoucherItemResDto> findAllVoucherItemsList();
+
+    @Query("Select new com.ssafy.nhdream.domain.voucher.dto.VoucherItemResDto(VI.id, VI.title, VI.createdAt, VI.price, VI.quantity, VI.image, VI.type, VI.affiliate.name) " +
+            "From VoucherItem VI " +
+            "Where 1 = 1 and " +
+            "VI.id = :itemId "
+    )
+    VoucherItemResDto findVoucherItems(int itemId);
+
+    @Query("Select new com.ssafy.nhdream.domain.voucher.dto.VoucherItemResDto(VI.id, VI.title, VI.createdAt, VI.price, VI.quantity, VI.image, VI.type, VI.affiliate.name) " +
+            "From VoucherItem VI " +
+            "Where 1 = 1 and " +
+            "VI.type = :type ")
+    List<VoucherItemResDto> findAllVoucherItemsListByCategory(int type);
+}

@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4464a674c43bd8a1ad36a784fae9b520ff7af83a4185024810ee777ad44132aa
-size 825
+import api from '@/services/api'
+
+// NHDC 유동량
+function getNHDCFlow(startDate, endDate, success, fail) {
+  api.get(`/admins/nhdc?startDate=${startDate}&endDate=${endDate}`)
+  .then(response => success(response.data.dataBody))
+  .catch(error => fail(error))
+}
+
+// NHDC 거래량
+function getNHDCTradeFlow(startDate, endDate, success, fail) {
+    api.get(`/admins/nhdc/transaction?startDate=${startDate}&endDate=${endDate}`)
+    .then(response => success(response.data.dataBody))
+    .catch(error => fail(error))
+}
+
+// 드림토큰 불러오기
+function getDRDCFlow(fromDate, toDate, success, fail) {
+  api.get(`/vouchers/admin?fromDate=${fromDate}&toDate=${toDate}`)
+  .then(response => success(response.data.dataBody))
+  .catch(error => fail(error))
+}
+
+export {
+    getNHDCFlow,
+    getNHDCTradeFlow, 
+    getDRDCFlow,
+}

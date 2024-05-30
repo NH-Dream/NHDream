@@ -1,3 +1,73 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8d57f49e5d33faf3be747e220e877c6e83fee9fbe3345e5f288ea4f672405def
-size 2350
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.2.5'
+	id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'com.ssafy'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '21'
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+	maven { url "https://artifacts.consensys.net/public/maven/maven/" }
+
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-validation:3.2.1'
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'com.mysql:mysql-connector-j'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
+
+	// aws s3
+	implementation 'io.awspring.cloud:spring-cloud-aws-s3:3.0.2'
+	implementation 'org.springframework:spring-test:6.1.2'
+	implementation 'software.amazon.awssdk:s3:2.17.50'
+
+	// Swagger
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
+	implementation 'io.swagger.core.v3:swagger-annotations:2.2.15'
+
+	// Mail
+	implementation 'org.springframework.boot:spring-boot-starter-mail'
+
+	// JWT
+	implementation 'io.jsonwebtoken:jjwt-api:0.12.3'
+	implementation 'io.jsonwebtoken:jjwt-impl:0.12.3'
+	implementation 'io.jsonwebtoken:jjwt-jackson:0.12.3'
+
+	//web3j
+	implementation group: 'org.web3j', name: 'core', version: '4.11.3'
+	implementation group: 'org.web3j', name: 'crypto', version: '4.11.3'
+
+	// QueryDSL
+	implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
+	annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jakarta"
+	annotationProcessor "jakarta.annotation:jakarta.annotation-api"
+	annotationProcessor "jakarta.persistence:jakarta.persistence-api"
+
+	// Batch
+	implementation 'org.springframework.boot:spring-boot-starter-batch'
+	implementation'org.springframework.boot:spring-boot-starter-quartz'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1da8da80fa2570b83656e0d89e7f08196d96d3a07751de9d8957ecd25b601f2e
-size 868
+
+
+const FarmerData = ({data, index, changeModalStatus, activeIndex}) => {
+
+    return(
+        <>
+            <tr className="hover" 
+                onClick={()=> changeModalStatus(data.farmerReviewId, data.approvalStatus)}
+            >
+                <th>{data.curReviewCnt}</th>
+                <td>{data.userName}</td>
+                <td>{data.licenseNum}</td>
+                <td>{data.applicationDate}</td>
+                <td className="flex justify-center items-center">
+                    <div className={`badge ${data.approvalStatus === 'APPROVED' ? 'bg-APPROVAL text-[#1E7572] font-bold' : data.approvalStatus === 'PENDING' ? 'bg-[#A2A2A2] font-bold' : 'bg-REJECT text-[#FF0000] font-bold'}`}>
+                        {data.approvalStatus}
+                    </div>
+                </td>
+            </tr>
+        </>
+    )
+}
+
+export default FarmerData;

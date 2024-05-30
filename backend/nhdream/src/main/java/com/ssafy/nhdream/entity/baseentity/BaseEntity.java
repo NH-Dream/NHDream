@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d1e7a487fecaf98864209907600cab4fcff3df0b776e07a56698ace564bef17a
-size 632
+package com.ssafy.nhdream.entity.baseentity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.EntityListeners;
+import jakarta.persistence.MappedSuperclass;
+import lombok.Getter;
+import org.springframework.data.annotation.CreatedBy;
+import org.springframework.data.annotation.LastModifiedBy;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
+@Getter
+@MappedSuperclass
+@EntityListeners(AuditingEntityListener.class)
+public class BaseEntity extends BaseTimeEntity{
+
+    @CreatedBy
+    @Column(updatable = false)
+    private String createdBy;
+
+    @LastModifiedBy
+    private String updatedBy;
+}

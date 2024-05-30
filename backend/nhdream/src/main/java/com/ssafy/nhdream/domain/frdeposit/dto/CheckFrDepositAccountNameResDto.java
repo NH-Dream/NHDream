@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:59d2ee9b6887d75bedc04cebbc1ba1ce18933e4fd266da4c665a43eb11f5b8ca
-size 573
+package com.ssafy.nhdream.domain.frdeposit.dto;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.time.LocalDate;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@Builder
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class CheckFrDepositAccountNameResDto {
+    private String oppositeAccountNum;
+    private String oppositeName;
+    private String oppositeContractAddress;
+
+    //쿼리스트링 있을 때 시작일도 반환
+    private LocalDate startDate;
+}

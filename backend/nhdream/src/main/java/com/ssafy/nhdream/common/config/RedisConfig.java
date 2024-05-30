@@ -1,3 +1,54 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eefbc9d6ed623b6efe2ff461f57e23276f2adeccfa8dff8d200d9a8f54a8fa6a
-size 2271
+package com.ssafy.nhdream.common.config;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
+import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.repository.configuration.EnableRedisRepositories;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
+
+@Configuration
+@EnableRedisRepositories(basePackages = "com.ssafy.nhdream.common.redis")
+public class RedisConfig {
+
+    @Value("${spring.data.redis.host}")
+    private String host;
+
+    @Value("${spring.data.redis.port}")
+    private int port;
+
+    @Value("${spring.data.redis.password}")
+    private String password;
+
+    @Bean
+    public RedisConnectionFactory redisTokenConnectionFactory() {
+        RedisStandaloneConfiguration redisStandaloneConfiguration = new RedisStandaloneConfiguration(host, port);
+        redisStandaloneConfiguration.setPassword(password);
+        redisStandaloneConfiguration.setDatabase(0);
+
+        return new LettuceConnectionFactory(redisStandaloneConfiguration);
+    }
+
+    @Bean
+    public RedisTemplate<String, Object> redisTokenTemplate() {
+        RedisTemplate<String, Object> redisTemplate = new RedisTemplate<>();
+        redisTemplate.setConnectionFactory(redisTokenConnectionFactory());
+
+        // 일반적인 key:value의 경우 시리얼라이저
+        // setKeySerializer, setValueSerializer 설정으로 redis-cli를 통해 직접 데이터를 보는게 가능하다.
+        redisTemplate.setKeySerializer(new StringRedisSerializer());
+        redisTemplate.setValueSerializer(new StringRedisSerializer());
+
+        // Hash를 사용할 경우 시리얼라이저
+        redisTemplate.setHashKeySerializer(new StringRedisSerializer());
+        redisTemplate.setHashValueSerializer(new StringRedisSerializer());
+
+        // 모든 경우
+        redisTemplate.setDefaultSerializer(new StringRedisSerializer());
+
+        return redisTemplate;
+    }
+}

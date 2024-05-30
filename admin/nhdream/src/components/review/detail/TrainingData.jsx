@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d60a96fea7ed9912fdf15e502c4205a1e502aec5922cf55a7cb05734ca2f9ffa
-size 876
+
+
+const TrainingData = ({data, index, changeModalStatus, activeIndex}) => {
+
+    return(
+        <>
+            <tr className="hover" 
+                onClick={()=> changeModalStatus(data.trainingReviewId, data.approvalStatus)}
+            >
+                <th>{data.curReviewCnt}</th>
+                <td>{data.userName}</td>
+                <td>{data.trainingName}</td>
+                <td>{data.applicationDate}</td>
+                <td className="flex justify-center items-center">
+                    <div className={`badge ${data.approvalStatus === 'APPROVED' ? 'bg-APPROVAL text-[#1E7572] font-bold' : data.approvalStatus === 'PENDING' ? 'bg-[#A2A2A2] font-bold' : 'bg-REJECT text-[#FF0000] font-bold'}`}>
+                        {data.approvalStatus}
+                    </div>
+                </td>
+            </tr>
+        </>
+    )
+}
+
+export default TrainingData;

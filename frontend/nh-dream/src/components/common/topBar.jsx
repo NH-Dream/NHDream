@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f8991931a5cf2151dbb011d444ac8ab09b4da316ee2efe9b3b1bc7e367dc6857
-size 563
+import Back from '../../assets/images/topbar/back.png'
+import { useNavigate } from 'react-router-dom'
+
+export default function TopBar({ title, color,showBackIcon = true}){
+  const navigate = useNavigate()
+
+  const handleBack = ()=>{
+    navigate(-1);
+  }
+
+  return(
+    <div className='flex p-4' style={{ backgroundColor:color }}>
+      {showBackIcon &&(
+      <img src={Back} alt="" style={{width:15}} onClick={handleBack}/>
+      )}
+      <h1 className='text-xl ml-5' style={{ fontFamily: 'Pretendard ExtraBold', fontWeight: 800 }}>{title}</h1>
+    </div>
+  )
+}
