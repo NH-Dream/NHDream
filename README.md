@@ -1,4 +1,5 @@
 # 💸 NH DREAM : NH농협은행 기업연계 프로젝트💸
+
 ## 목차
 
 [1. 개요](#🌽-개요)
@@ -21,7 +22,7 @@
 
 ### 대상
 
-- NH 청년농부 사관학교 수료생 
+- NH 청년농부 사관학교 수료생
 - 귀농한지 얼마 되지 않은 농부
 
 ### 목표
@@ -38,19 +39,19 @@
 
 ### Frontend
 
-|이정민|장세정|권현준|
-| :---------------------------------------------------------: | :--------------------------------------------------------: |:--------------------------------------------------------: |
-| <img src="assets/img/lee.webp" width="150" height="150"> | <img src="assets/img/jang.png" width="150" height="150"> | <img src="assets/img/kwon.jpeg" width="150" height="150"> |
-|[@minimimin](https://github.com/minimimin)|[@wkdtpwjd19](https://github.com/wkdtpwjd19)|[@Kwonhyunjun](https://github.com/Kwonhyunjun)|
-|금융 상품 관련 전반 <br/> 통합관리 내역 <br/> 관리자 토큰 지갑 web3|프로젝트 구조 구성 <br/> 거래, 작물, 마이팜|프로젝트 구조 구성 <br/> 거래, 작물, 마이팜|
+|                               이정민                                |                             장세정                              |                          권현준                           |
+| :-----------------------------------------------------------------: | :-------------------------------------------------------------: | :-------------------------------------------------------: |
+|      <img src="assets/img/lee.webp" width="150" height="150">       |    <img src="assets/img/jang.png" width="150" height="150">     | <img src="assets/img/kwon.jpeg" width="150" height="150"> |
+|             [@minimimin](https://github.com/minimimin)              |          [@wkdtpwjd19](https://github.com/wkdtpwjd19)           |      [@Kwonhyunjun](https://github.com/Kwonhyunjun)       |
+| 금융 상품 관련 전반 <br/> 통합관리 내역 <br/> 관리자 토큰 지갑 web3 | 메인화면 <br/> 바우처 <br/> 마이페이지(이체관련) <br/> SSE 알림 |         관리자 페이지 <br/> (심사, 토큰 모니터링)         |
 
 ### Backend
 
-|                       김준엽                        |                        권현준                         |                       오승현                       |                      조현제                      |
-| :-------------------------------------------------------: | :---------------------------------------------------------: | :--------------------------------------------------------: | :--------------------------------------------------------: |
-| <img src="assets/img/kim.png" width="150" height="150"> | <img src="assets/img/kwon.jpeg" width="150" height="150"> | <img src="assets/img/oh.jpg" width="150" height="150"> | <img src="assets/img/jo.jpg" width="150" height="150"> |
-|      [@junyeop1322](https://github.com/junyeop1322)       |       [@Kwonhyunjun](https://github.com/Kwonhyunjun)        |           [@timber3](https://github.com/timber3)           |           [@zziru95](https://github.com/zziru95)           |
-|                        팀장 <br/> 대출 API <br/> AWS S3 <br/>SSE  알림 기능             |                           서기 <br/> 회원 및 관리자 API <br/> 정기예금 API  <br/> 배치 및 스케줄러                            | 발표자<br/>                인프라 구축  <br/> 바우처 관련 API                      |                    Solidity 작성 <br/>(적금, 대출, NHDC) <br/> 적금 및 이체 API <br/> 배치 및 스케줄러                  |
+|                         김준엽                          |                                 권현준                                  |                         오승현                         |                                       조현제                                        |
+| :-----------------------------------------------------: | :---------------------------------------------------------------------: | :----------------------------------------------------: | :---------------------------------------------------------------------------------: |
+| <img src="assets/img/kim.png" width="150" height="150"> |        <img src="assets/img/kwon.jpeg" width="150" height="150">        | <img src="assets/img/oh.jpg" width="150" height="150"> |               <img src="assets/img/jo.jpg" width="150" height="150">                |
+|     [@junyeop1322](https://github.com/junyeop1322)      |             [@Kwonhyunjun](https://github.com/Kwonhyunjun)              |         [@timber3](https://github.com/timber3)         |                       [@zziru95](https://github.com/zziru95)                        |
+|   팀장 <br/> 대출 API <br/> AWS S3 <br/>SSE 알림 기능   | 서기 <br/> 회원 및 관리자 API <br/> 정기예금 API <br/> 배치 및 스케줄러 |     발표자<br/> 인프라 구축 <br/> 바우처 관련 API      | Solidity 작성 <br/>(적금, 대출, NHDC) <br/> 적금 및 이체 API <br/> 배치 및 스케줄러 |
 
 </br>
 
@@ -64,18 +65,20 @@
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![DaisyUI](https://img.shields.io/badge/daisyui-5A0EF8?style=for-the-badge&logo=daisyui&logoColor=white)
 
-zustand 
+<!-- zustand 추가 -->
 
 ### Backend
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+<img src="https://img.shields.io/badge/Springboot-6DB33F?style=for-the-badge&logo=Springboot&logoColor=white">
+<img src="https://img.shields.io/badge/SpringSecurity-6DB33F?style=for-the-badge&logo=SpringSecurity&logoColor=white">
 ![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white)
 ![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
 ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
 
-batch / springboot 로 수정 / security
+<!-- ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) -->
+<!-- batch 추가 필요-->
 
 ### Infra
 
@@ -92,7 +95,7 @@ batch / springboot 로 수정 / security
 ![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white)
 ![Web3.js](https://img.shields.io/badge/web3.js-F16822?style=for-the-badge&logo=web3.js&logoColor=white)
 
-web3j / ganache
+<!-- web3j / ganache 추가 -->
 
 ### Others
 
@@ -105,17 +108,21 @@ web3j / ganache
 </br>
 
 ## 🥔 ERD
+
 <img src="assets/img/erd.png">
 
 </br>
 
 ## 🍠 서비스 아키텍처
+
 <img src="assets/img/architecture.png">
 
 </br>
 
 ## 🥒 주요 기능
+
 ### 일반 유저
+
 <table style="word-break: keep-all;">
 <tr ><th style="text-align:center;">기능</th><th>내용</th></tr>
 
@@ -139,13 +146,10 @@ web3j / ganache
   <td>이용자는 이자계산기를 각 상품과 기간에 따른 이자율을 손쉽게 계산할 수 있고 해당 정보를 토대로 예금 및 적금 상품을 가입할 수 있습니다.</td>
 </tr>
 
-
 <tr>
   <td style="text-align:center;">만기처리 <br/> 자동이체</td>
   <td> 배치 시스템을 통해 데이터베이스에서 오늘의 이체 날짜와 만기 일자를 조회한 후, 로직을 처리하여 결과를 데이터베이스에 업데이트합니다.</td>
 </tr>
-
-
 
 <tr>
   <td style="text-align:center;">알림 서비스 (SSE)</td>
@@ -153,12 +157,12 @@ web3j / ganache
  프론트엔드에서는 이러한 이벤트를 수신하여 사용자에게 즉각적인 알림을 제공합니다.</td>
 </tr>
 
-
 </table>
 
 <br/>
 
 ### 관리자
+
 <table style="word-break: keep-all;">
 <tr ><th style="text-align:center;">기능</th><th>내용</th></tr>
 <tr>
@@ -194,7 +198,9 @@ web3j / ganache
 </br>
 
 ## 🥦 서비스 화면
+
 ### 1. 일반 유저
+
 <!-- 1. 회원가입 & 로그인 (권현준) -->
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
@@ -237,8 +243,6 @@ web3j / ganache
   <p>이체</p>
   </div>
 </div>
-
-
 
 <!-- 6. 바우처 -->
 
