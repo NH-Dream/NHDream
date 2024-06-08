@@ -51,7 +51,7 @@
 | :-----------------------------------------------------: | :---------------------------------------------------------------------: | :----------------------------------------------------: | :---------------------------------------------------------------------------------: |
 | <img src="assets/img/kim.png" width="150" height="150"> |        <img src="assets/img/kwon.jpeg" width="150" height="150">        | <img src="assets/img/oh.jpg" width="150" height="150"> |               <img src="assets/img/jo.jpg" width="150" height="150">                |
 |     [@junyeop1322](https://github.com/junyeop1322)      |             [@Kwonhyunjun](https://github.com/Kwonhyunjun)              |         [@timber3](https://github.com/timber3)         |                       [@zziru95](https://github.com/zziru95)                        |
-|   팀장 <br/> 대출 API <br/> AWS S3 <br/>SSE 알림 기능   | 서기 <br/> 회원 및 관리자 API <br/> 정기예금 API <br/> 배치 및 스케줄러 |     발표자<br/> 인프라 구축 <br/> 바우처 관련 API      | Solidity 작성 <br/>(적금, 대출, NHDC) <br/> 적금 및 이체 API <br/> 배치 및 스케줄러 |
+|   팀장 <br/> 대출 API <br/> AWS S3 <br/>SSE 알림 기능   | 회원 및 관리자 API <br/> 정기예금 API <br/> 배치 및 스케줄러 |     발표자<br/> 인프라 구축 <br/> 바우처 관련 API      |서기 <br/> Solidity 작성 <br/>(적금, 대출, NHDC) <br/> 적금 및 이체 API <br/> 배치 및 스케줄러 |
 
 </br>
 
